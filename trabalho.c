@@ -23,9 +23,20 @@ int main(int argc, char const *argv[])
     player3.name = "medonho";
     player3.coin = 99;
     root = insertNode(root,player3);
+    
+    player player4;
+    player4.name = "Jefim";
+    player4.coin = 200;
+    root = insertNode(root,player4);
+    
+    player player5;
+    player5.name = "Diego";
+    player5.coin = 20;
+    root = insertNode(root,player5);
+    
+    
 
-    printf("%s",root->player.name);
-    printf("%s",root->left->player.name);
-    printf("%s",root->right->player.name);
+   printTree(root);
+   
     return 0;
 }
